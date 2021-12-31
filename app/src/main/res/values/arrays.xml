@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="course_title_array">
+        <item>People</item>
+        <item>At home</item>
+        <item>School</item>
+        <item>Work</item>
+        <item>Leisure</item>
+        <item>The world</item>
+    </array>
+    <string-array name="course_count_units_array">
+        <item>12</item>
+        <item>6</item>
+        <item>6</item>
+        <item>8</item>
+        <item>11</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="course_count_lessons_array">
+        <item>36</item>
+        <item>70</item>
+        <item>55</item>
+        <item>70</item>
+        <item>65</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="course_count_tests_array">
+        <item>24</item>
+        <item>12</item>
+        <item>10</item>
+        <item>12</item>
+        <item>24</item>
+        <item>12</item>
+    </string-array>
+
+</resources>

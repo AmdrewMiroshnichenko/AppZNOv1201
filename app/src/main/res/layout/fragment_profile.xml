@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/MAIN_BACKGROUND"
+        tools:context=".ui.profile.ProfileFragment">
+
+        <View
+            android:id="@+id/header_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/profile_header_height"
+            android:background="@color/DARK_COLOR"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Андрій"
+            android:textColor="@color/NAV_WHITE"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_clocks" />
+
+        <ImageView
+            android:id="@+id/profile_clocks"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/profile_clocks"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/header_profile"
+            app:srcCompat="@drawable/profile_clocks" />
+
+        <View
+            android:id="@+id/avarage_time_profile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_clocks"
+            app:layout_constraintEnd_toStartOf="@+id/profile_clocks"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profile_clocks"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/total_time_profile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_clocks"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_clocks"
+            app:layout_constraintTop_toTopOf="@+id/profile_clocks" />
+
+        <TextView
+            android:id="@+id/tv_minutes_per_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="30"
+            android:textColor="@color/PROFILE_HEADER_TEXT_COLOR"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="@+id/avarage_time_profile"
+            app:layout_constraintStart_toStartOf="@+id/avarage_time_profile"
+            app:layout_constraintTop_toTopOf="@+id/avarage_time_profile" />
+
+        <TextView
+            android:id="@+id/tv_minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="хв"
+            android:textColor="@color/NAV_WHITE"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/avarage_time_profile"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_minutes_per_day"
+            app:layout_constraintTop_toTopOf="@+id/tv_minutes_per_day" />
+
+        <TextView
+            android:id="@+id/bottom_text_avarege"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:text="В середньому на добу"
+            android:textAlignment="center"
+            android:textColor="@color/NAV_WHITE"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/avarage_time_profile"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/avarage_time_profile"
+            app:layout_constraintTop_toBottomOf="@+id/tv_minutes_per_day" />
+
+        <TextView
+            android:id="@+id/tv_total_time_learning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="22"
+            android:textColor="@color/PROFILE_HEADER_TEXT_COLOR"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="@+id/total_time_profile"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="@+id/total_time_profile"
+            app:layout_constraintTop_toTopOf="@+id/total_time_profile" />
+
+        <TextView
+            android:id="@+id/tv_hourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="год"
+            android:textColor="@color/NAV_WHITE"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/total_time_profile"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_total_time_learning"
+            app:layout_constraintTop_toTopOf="@+id/tv_total_time_learning" />
+
+        <TextView
+            android:id="@+id/bottom_text_total"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:text="Всього  в навчанні"
+            android:textAlignment="center"
+            android:textColor="@color/NAV_WHITE"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="@+id/total_time_profile"
+            app:layout_constraintStart_toStartOf="@+id/total_time_profile"
+            app:layout_constraintTop_toBottomOf="@+id/tv_total_time_learning" />
+
+        <TextView
+            android:id="@+id/tv_learned_topics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/mon_ex_bold"
+            android:text="Вивчені теми"
+            android:textColor="@color/DARK_COLOR"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/pb_main_topic_1"
+            app:layout_constraintStart_toStartOf="@+id/pb_main_topic_1"
+            app:layout_constraintTop_toBottomOf="@+id/header_profile" />
+
+        <ProgressBar
+            android:id="@+id/pb_main_topic_1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="220dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:progress="100"
+            android:progressDrawable="@drawable/shape_progressbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_main_topic_1" />
+
+        <TextView
+            android:id="@+id/tv_main_topic_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montm"
+            android:text="People"
+            android:textColor="@color/PROFILE_TEXT_COLOR"
+            app:layout_constraintEnd_toEndOf="@+id/pb_main_topic_1"
+            app:layout_constraintStart_toStartOf="@+id/pb_main_topic_1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_learned_topics" />
+
+        <TextView
+            android:id="@+id/tv_main_topic_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montm"
+            android:text="At home"
+            android:textColor="@color/PROFILE_TEXT_COLOR"
+            app:layout_constraintEnd_toEndOf="@+id/tv_main_topic_1"
+            app:layout_constraintStart_toStartOf="@+id/tv_main_topic_1"
+            app:layout_constraintTop_toBottomOf="@+id/pb_main_topic_1" />
+
+        <ProgressBar
+            android:id="@+id/pb_main_topic_2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:progress="90"
+            android:progressDrawable="@drawable/shape_progressbar"
+            app:layout_constraintEnd_toEndOf="@+id/pb_main_topic_1"
+            app:layout_constraintStart_toStartOf="@+id/pb_main_topic_1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_main_topic_2" />
+
+        <TextView
+            android:id="@+id/tv_main_topic_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montm"
+            android:text="School"
+            android:textColor="@color/PROFILE_TEXT_COLOR"
+            app:layout_constraintEnd_toEndOf="@+id/tv_main_topic_2"
+            app:layout_constraintStart_toStartOf="@+id/tv_main_topic_2"
+            app:layout_constraintTop_toBottomOf="@+id/pb_main_topic_2" />
+
+        <ProgressBar
+            android:id="@+id/pb_main_topic_3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:progress="50"
+            android:progressDrawable="@drawable/shape_progressbar"
+            app:layout_constraintEnd_toEndOf="@+id/pb_main_topic_2"
+            app:layout_constraintStart_toStartOf="@+id/pb_main_topic_2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_main_topic_3" />
+
+        <TextView
+            android:id="@+id/tv_main_topic_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montm"
+            android:text="Work"
+            android:textColor="@color/PROFILE_TEXT_COLOR"
+            app:layout_constraintEnd_toEndOf="@+id/tv_main_topic_3"
+            app:layout_constraintStart_toStartOf="@+id/tv_main_topic_3"
+            app:layout_constraintTop_toBottomOf="@+id/pb_main_topic_3" />
+
+        <ProgressBar
+            android:id="@+id/pb_main_topic_4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:progress="22"
+            android:progressDrawable="@drawable/shape_progressbar"
+            app:layout_constraintEnd_toEndOf="@+id/pb_main_topic_3"
+            app:layout_constraintStart_toStartOf="@+id/pb_main_topic_3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_main_topic_4" />
+
+        <TextView
+            android:id="@+id/tv_main_topic_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montm"
+            android:text="Leisure"
+            android:textColor="@color/PROFILE_TEXT_COLOR"
+            app:layout_constraintEnd_toEndOf="@+id/tv_main_topic_4"
+            app:layout_constraintStart_toStartOf="@+id/tv_main_topic_4"
+            app:layout_constraintTop_toBottomOf="@+id/pb_main_topic_4" />
+
+        <ProgressBar
+            android:id="@+id/pb_main_topic_5"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:progress="0"
+            android:progressDrawable="@drawable/shape_progressbar"
+            app:layout_constraintEnd_toEndOf="@+id/pb_main_topic_4"
+            app:layout_constraintStart_toStartOf="@+id/pb_main_topic_4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_main_topic_5" />
+
+        <TextView
+            android:id="@+id/tv_main_topic_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montm"
+            android:text="The World"
+            android:textColor="@color/PROFILE_TEXT_COLOR"
+            app:layout_constraintEnd_toEndOf="@+id/tv_main_topic_5"
+            app:layout_constraintStart_toStartOf="@+id/tv_main_topic_5"
+            app:layout_constraintTop_toBottomOf="@+id/pb_main_topic_5" />
+
+        <ProgressBar
+            android:id="@+id/pb_main_topic_6"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:progress="0"
+            android:progressDrawable="@drawable/shape_progressbar"
+            app:layout_constraintEnd_toEndOf="@+id/pb_main_topic_5"
+            app:layout_constraintStart_toStartOf="@+id/pb_main_topic_5"
+            app:layout_constraintTop_toBottomOf="@+id/tv_main_topic_6" />
+
+        <ImageView
+            android:id="@+id/ic_main_topic_1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_profile_people"
+            app:layout_constraintBottom_toBottomOf="@+id/pb_main_topic_1"
+            app:layout_constraintEnd_toStartOf="@+id/pb_main_topic_1"
+            app:layout_constraintTop_toTopOf="@+id/pb_main_topic_1"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/ic_main_topic_2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_profile_home"
+            app:layout_constraintBottom_toBottomOf="@+id/pb_main_topic_2"
+            app:layout_constraintEnd_toStartOf="@+id/pb_main_topic_2"
+            app:layout_constraintTop_toTopOf="@+id/pb_main_topic_2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/ic_main_topic_3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_profile_school"
+            app:layout_constraintBottom_toBottomOf="@+id/pb_main_topic_3"
+            app:layout_constraintEnd_toStartOf="@+id/pb_main_topic_3"
+            app:layout_constraintTop_toTopOf="@+id/pb_main_topic_3"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/ic_main_topic_4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_profile_work"
+            app:layout_constraintBottom_toBottomOf="@+id/pb_main_topic_4"
+            app:layout_constraintEnd_toStartOf="@+id/pb_main_topic_4"
+            app:layout_constraintTop_toTopOf="@+id/pb_main_topic_4"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/ic_main_topic_5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_profile_leisure"
+            app:layout_constraintBottom_toBottomOf="@+id/pb_main_topic_5"
+            app:layout_constraintEnd_toStartOf="@+id/pb_main_topic_5"
+            app:layout_constraintTop_toTopOf="@+id/pb_main_topic_5"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/ic_main_topic_6"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_profile_world"
+            app:layout_constraintBottom_toBottomOf="@+id/pb_main_topic_6"
+            app:layout_constraintEnd_toStartOf="@+id/pb_main_topic_6"
+            app:layout_constraintTop_toTopOf="@+id/pb_main_topic_6"
+            app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_timeleft_part_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mon_ex_bold"
+        android:text="До ЗНО залишилось"
+        android:textColor="@color/DARK_COLOR"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_timeleft_part_count"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb_main_topic_6" />
+
+        <TextView
+            android:id="@+id/tv_timeleft_part_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_black"
+            android:text="3"
+            android:textColor="@color/PROFILE_MONTH_LEFT_COLOR"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_timeleft_part_start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_timeleft_part_start" />
+
+        <TextView
+            android:id="@+id/tv_timeleft_part_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mon_ex_bold"
+            android:text="місяці !"
+            android:textColor="@color/DARK_COLOR"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_timeleft_part_start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_timeleft_part_count"
+            app:layout_constraintTop_toTopOf="@+id/tv_timeleft_part_start"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="@string/learn"
+            android:id="@+id/id_learn"
+            android:icon="@drawable/ic_drawer_learn" />
+
+        <item
+            android:title="@string/nav_buy_the_whole_course"
+            android:id="@+id/id_buy_the_whole_course"
+            android:icon="@drawable/ic_drawer_credit_card" />
+
+        <item
+            android:title="@string/nav_evaluate_the_application"
+            android:id="@+id/id_evaluate_the_application"
+            android:icon="@drawable/ic_drawer_like" />
+
+        <item
+            android:title="@string/nav_share_with_friends"
+            android:id="@+id/id_share_with_friends"
+            android:icon="@drawable/ic_drawer_share" />
+
+        <item
+            android:title="@string/nav_contact_us"
+            android:id="@+id/id_contact_us"
+            android:icon="@drawable/ic_drawer_chat" />
+
+        <item
+            android:title="@string/nav_settings"
+            android:id="@+id/id_settings"
+            android:icon="@drawable/ic_drawer_settings" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/nav_logo_cup"
+        app:layout_constraintBottom_toTopOf="@+id/nav_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/nav_logo_cup" />
+
+    <TextView
+        android:id="@+id/nav_textView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/nav_header_textview_height"
+        android:background="@drawable/nav_medium_backgound"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/nav_header_textview_padding_text"
+        android:text="@string/nav_menu"
+        android:textColor="@color/NAV_WHITE"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_course"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.course.CourseFragment">
+
+    <View
+        android:id="@+id/course_bottom_text_view"
+        android:layout_width="280dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/course_bottom_text_backgtpond"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_grid_view"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tv_course_header_bottom"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:background="@drawable/course_text_background"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:text="@string/course_header_bottom"
+        android:textColor="@color/NAV_WHITE"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_course_girl" />
+
+    <TextView
+        android:id="@+id/tv_course_header_top"
+        android:layout_width="210dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="76dp"
+        android:background="@drawable/course_background_text_header_top"
+        android:gravity="center"
+        android:text="@string/course_header_top"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_course_header_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/im_course_girl"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/im_course_girl"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/smile_girl" />
+
+    <GridView
+        android:id="@+id/course_grid_view"
+        android:layout_width="0dp"
+        android:layout_height="345dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:numColumns="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_course_header_bottom">
+
+    </GridView>
+
+    <ImageView
+        android:id="@+id/im_course_boy"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/im_course_boy"
+        app:layout_constraintBottom_toBottomOf="@+id/course_bottom_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/course_bottom_text_view"
+        app:layout_constraintTop_toTopOf="@+id/course_bottom_text_view"
+        tools:src="@drawable/im_course_boy" />
+
+    <TextView
+        android:id="@+id/tv_bottom_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/course_bottom_main"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/course_bottom_text_view"
+        app:layout_constraintTop_toTopOf="@+id/course_bottom_text_view" />
+
+    <TextView
+        android:id="@+id/tv_bottom_child_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montm"
+        android:text="@string/course_bottom_child_1"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="10.5sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_bottom_main"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bottom_main" />
+
+    <TextView
+        android:id="@+id/tv_bottom_child_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montm"
+        android:text="@string/course_bottom_child_2"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="10.5sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_bottom_child_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bottom_child_1" />
+
+    <TextView
+        android:id="@+id/tv_bottom_child_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montm"
+        android:text="@string/course_bottom_child_3"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="10.5sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_bottom_child_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bottom_child_2" />
+
+    <TextView
+        android:id="@+id/tv_bottom_child_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montm"
+        android:text="@string/course_bottom_child_4"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="10.5sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_bottom_child_3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bottom_child_3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="136dp"
+    android:layout_height="180dp"
+    android:background="@drawable/course_item_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ImageMainTitle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:src="@drawable/ic_profile_people" />
+
+    <TextView
+        android:id="@+id/item_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mont_black"
+        android:text="People"
+        android:textColor="@color/DARK_COLOR" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_unit_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/mont_semibold"
+            android:text="@string/course_units"
+            android:textColor="@color/DARK_COLOR"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/item_unit_count"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:background="@color/PROFILE_MONTH_LEFT_COLOR"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/NAV_WHITE"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_lessons_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/mont_semibold"
+            android:text="@string/course_lessons"
+            android:textColor="@color/DARK_COLOR"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/item_lessons_count"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:background="@color/PROFILE_MONTH_LEFT_COLOR"
+            android:gravity="center"
+            android:text="36"
+            android:textColor="@color/NAV_WHITE"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_tests_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/mont_semibold"
+            android:text="@string/course_tests"
+            android:textColor="@color/DARK_COLOR"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/item_tests_count"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:background="@color/PROFILE_MONTH_LEFT_COLOR"
+            android:gravity="center"
+            android:text="24"
+            android:textColor="@color/NAV_WHITE"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
